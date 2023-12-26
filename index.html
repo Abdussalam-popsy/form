@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A SignUp Form</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+        }
+        input {
+            margin: 0;
+            margin-bottom: 12px;
+        }
+        .input-item {
+            width: 100%;
+            height: 1.4rem;
+        }
+        fieldset {
+            border: none;
+        }
+        #security {
+            width: 100%;
+            height: 1.7rem;
+        }
+        .margin {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 8px;
+            background-color: rgb(25, 25, 25);
+            color: antiquewhite;
+            font-weight: 600;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <h1>Sign up</h1>
+            <label for="fullname">Full name: <br></label>
+            <input class="input-item" id="fullname" type="text" name="fullname">
+        </div>
+        <div>
+            <label for="email">Email: <br></label>
+            <input class="input-item" id="email" type="email" name="email">
+        </div>
+        <div>
+            <label for="password">Password: <br></label>
+            <input class="input-item" id="password" type="password" name="password">
+        </div>
+        <div>
+            <label for="c-password">Confirm Password: <br></label>
+            <input class="input-item" id="c-password" type="password" name="c-password">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male"><input id="male" type="radio" name="gender" > Male</label>
+                <label for="female"><input id="female" type="radio" name="gender"> Female</label>
+                <label for="other"><input id="other" type="radio" name="gender"> Other</label>
+            </fieldset>
+        </div>
+        <div class="margin">
+            <label for="security">Security question <br></label>
+            <select name="security" id="security">
+                <option value="">Choose an option</option>
+                <option value="1">What's the name of your first pet?</option>
+                <option value="2">What's your mother's maiden name?</option>
+                <option value="3">When did you get married?</option>
+                <option value="4">Dan Koe or Dickie Bush?</option>
+            </select>
+        </div>
+        <div class="margin">
+            <label for="security-answer">Answer here: <br></label>
+            <textarea name="security-answer" id="security-answer" cols="35" rows="4"></textarea>
+        </div>
+        <div class="margin">
+            <label for="t-and-c"> <input id="t-and-c" type="checkbox" name="t-and-c" > I agree to the terms and conditions</label>
+        </div>
+        <button type="submit" >Sign Up</button>
+    </form>
+</body>
+</html>
